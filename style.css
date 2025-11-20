@@ -1,120 +1,96 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 1s;
 }
 
 :root {
-    --font-color: rgb(247, 236, 236);
-    --main-color: rgb(76, 32, 134);
-    --background-color: rgb(241, 241, 247);
-    --first-random: black;
-    --second-random: white;
+  --font-color: rgb(247, 236, 236);
+  --main-color: rgb(76, 32, 134);
+  --background-color: black;
 }
 
 body {
-    background-color: var(--background-color);
-    animation: color-random 1s infinite;
-}
-
-@keyframes color-random {
-    0%{
-        background-color: var(--first-random);
-    }
-
-    100%{
-        background-color: var(--second-random);
-    }
-    
+  background-color: var(--background-color);
 }
 
 .header {
-    width: 100%;
-    background-color: var(--main-color);
-    border: 3px solid white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
 }
 
 .links-list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .links-list a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    transition: 1s;
+  color: var(--font-color);
+  display: inline-block;
+  text-decoration: none;
 }
 
 .links-list a:hover {
-    scale: 1.1;
+  scale: 1.1;
 }
 
 .fo9ma-logo-container {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid var(--font-color);
-    transition: 1s;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--font-color);
 }
 
 .fo9ma-logo-container:hover {
-    scale: 1.1;
+  scale: 1.1;
 }
 
 .search-bar {
-    border-radius: 8px;
-    border: 3px solid white;
-    outline: none;
-    background: none;
-    text-align: center;
-    color: var(--font-color);
-    transition: 1s;
+  border-radius: 8px;
+  border: 3px solid var(--font-color);
+  outline: none;
+  background: none;
+  text-align: center;
 }
 
-.search-bar:hover {
-    padding: 2px 5px;
+.search-bar:focus {
+  padding: 2px 5px;
 }
 form {
-    width: 35%;
-    background-color: blue;
-    height: 150px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    border-radius: 15px;
+  width: 35%;
+  background-color: blue;
+  height: 150px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 15px;
 }
 button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid red;
-    background-color: burlywood;
-}
-.articale {
-    display: inline-block;
-    margin-right: 55%;
-    margin-top: 10px;
-    font-size: 20px;
-    color: rgb(73, 7, 7);
-    font-weight: bold;
-}
-.image img{
-
-  border: 2px solid green ;
-  border-radius: 15px
-  
-  ;
-   margin-top: 5px;
-  
-}
-.image{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
   text-align: center;
- 
-
+  border: 2px solid red;
+  background-color: burlywood;
+}
+.article {
+  display: inline-block;
+  margin-right: 55%;
+  margin-top: 10px;
+  font-size: 20px;
+  color: rgb(73, 7, 7);
+  font-weight: bold;
+}
+.image img {
+  border: 2px solid green;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+.image {
+  text-align: center;
 }
