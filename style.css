@@ -7,31 +7,17 @@
 :root {
     --font-color: rgb(247, 236, 236);
     --main-color: rgb(76, 32, 134);
-    --background-color: rgb(241, 241, 247);
-    --first-random: black;
-    --second-random: white;
+    --background-color: black;
 }
 
 body {
     background-color: var(--background-color);
-    animation: color-random 1s infinite;
-}
-
-@keyframes color-random {
-    0%{
-        background-color: var(--first-random);
-    }
-
-    100%{
-        background-color: var(--second-random);
-    }
-    
+    transition: background-color 600ms;
 }
 
 .header {
     width: 100%;
     background-color: var(--main-color);
-    border: 3px solid white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -108,13 +94,13 @@ button {
 
   border: 2px solid green ;
   border-radius: 15px
-  
+
   ;
    margin-top: 5px;
-  
+
 }
 .image{
   text-align: center;
- 
+
 
 }
