@@ -21,8 +21,7 @@ class Operators {
 
   changeVariables() {
     setInterval(() => {
-      const v = this.randomColor();
-      $('html').css("--background-color", v);
+      $('html').css("--font-color", this.randomColor());
     }, 1000);
   }
 }
