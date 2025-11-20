@@ -8,10 +8,24 @@
     --font-color: rgb(247, 236, 236);
     --main-color: rgb(76, 32, 134);
     --background-color: rgb(241, 241, 247);
+    --first-random: black;
+    --second-random: white;
 }
 
 body {
     background-color: var(--background-color);
+    animation: color-random 1s infinite;
+}
+
+@keyframes color-random {
+    0%{
+        background-color: var(--first-random);
+    }
+
+    100%{
+        background-color: var(--second-random);
+    }
+    
 }
 
 .header {
