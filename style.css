@@ -22,6 +22,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
+  margin-bottom: 10px;
 }
 
 .links-list {
@@ -62,35 +63,49 @@ body {
 .search-bar:focus {
   padding: 2px 5px;
 }
-form {
-  width: 35%;
-  background-color: blue;
-  height: 150px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+
+.articles-container {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.article-container{
+  width: 300px;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px var(--font-color);
+}
+
+.article-image {
+  width: 280px;
+  border: 2px solid var(--font-color);
   border-radius: 15px;
 }
-button {
-  display: inline-block;
-  margin-top: 10px;
+
+.article-data-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add-cart {
   padding: 5px;
   text-align: center;
-  border: 2px solid red;
-  background-color: burlywood;
+  border: 2px solid var(--font-color);
+  color: var(--font-color);
+  background-color: inherit;
 }
-.article {
-  display: inline-block;
-  margin-right: 55%;
-  margin-top: 10px;
+
+.add-cart:hover{
+  color: red;
+  border-color: red;
+  scale: 1.1;
+}
+.article-name {
   font-size: 20px;
-  color: rgb(73, 7, 7);
+  color: var(--font-color);
   font-weight: bold;
-}
-.image img {
-  border: 2px solid green;
-  border-radius: 15px;
-  margin-top: 5px;
-}
-.image {
-  text-align: center;
 }
