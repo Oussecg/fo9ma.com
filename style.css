@@ -104,7 +104,7 @@ body {
   border-color: red;
   scale: 1.1;
 }
-.article-name {
+.article-name, .article-price {
   font-size: 20px;
   color: var(--font-color);
   font-weight: bold;

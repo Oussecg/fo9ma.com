@@ -1,8 +1,18 @@
 [
   {
+    "image": "./assets/images/FO9MA.webp",
     "name": "Oussema",
-    "age": "15",
-    "username": "Oussecg"
+    "price": "15"
+  },
+  {
+    "image": "./assets/images/FO9MA.webp",
+    "name": "Oussema",
+    "price": "15"
+  },
+  {
+    "image": "./assets/images/FO9MA.webp",
+    "name": "Oussema",
+    "price": "15"
   }
 ]
 
