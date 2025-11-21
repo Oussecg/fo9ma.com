@@ -1,9 +1,9 @@
 // import $ from "jquery";
-
 class Operators {
   constructor() {
     this.randomColor.bind(this);
     this.randomColor.bind(this);
+    this.readArticles.bind(this);
   }
 
   randomInt(min, max) {
@@ -21,10 +21,26 @@ class Operators {
 
   changeVariables() {
     setInterval(() => {
-      $('html').css("--font-color", this.randomColor());
+      $("html").css("--font-color", this.randomColor());
     }, 1000);
+  }
+
+  readArticles() {
+    $.ajax({
+      type: "GET",
+      url: "./articles.json",
+      dataType: "json",
+      cache: false,
+      success: (data) => {
+        console.log(data);
+      },
+      error: (jqXHR, textStatus, errorThrown) => {
+        console.error("Can't import articles.json:", textStatus, errorThrown);
+      },
+    });
   }
 }
 
-const operators = new Operators;
+const operators = new Operators();
 operators.changeVariables();
+operators.readArticles();
