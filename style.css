@@ -17,15 +17,14 @@ body {
     animation: color-random 1s infinite;
 }
 
-@keyframes color-random {
-    0%{
+@keyframes color-randoms {
+    0% {
         background-color: var(--first-random);
     }
 
-    100%{
+    100% {
         background-color: var(--second-random);
     }
-    
 }
 
 .header {
@@ -82,11 +81,18 @@ body {
 }
 form {
     width: 35%;
+    display: inline-block;
     background-color: blue;
     height: 150px;
     margin-bottom: 30px;
     margin-top: 30px;
+    margin-left: 30px;
     border-radius: 15px;
+}
+form:hover {
+    scale: 1.1;
+    transition: 1.5s;
+    box-shadow: 0 0 8px red, 0 0 8px red, 0 0 8px           ;
 }
 button {
     display: inline-block;
@@ -95,26 +101,21 @@ button {
     text-align: center;
     border: 2px solid red;
     background-color: burlywood;
+    
 }
 .articale {
     display: inline-block;
-    margin-right: 55%;
+    margin-right: 45%;
     margin-top: 10px;
     font-size: 20px;
-    color: rgb(73, 7, 7);
+    color: rgb(151, 15, 15);
     font-weight: bold;
 }
-.image img{
-
-  border: 2px solid green ;
-  border-radius: 15px
-  
-  ;
-   margin-top: 5px;
-  
+.image img {
+    border: 2px solid green;
+    border-radius: 15px;
+    margin-top: 5px;
 }
-.image{
-  text-align: center;
- 
-
+.image {
+    text-align: center;
 }
