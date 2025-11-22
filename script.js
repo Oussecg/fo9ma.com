@@ -54,7 +54,7 @@ class Operators {
         <div class="article-data-container">
           <label class="article-name">${article.name}</label>
           <label class="article-price">${article.price}$</label>
-          <button class="add-cart" id="add-cart">add to chart</button>
+          <button class="add-cart" id="add-cart" >add to chart</button>
         </div>
       </div>`;
     });
@@ -65,3 +65,7 @@ class Operators {
 const operators = new Operators();
 operators.changeVariables();
 operators.readArticles();
+operators.renderArticles();
+
+
+

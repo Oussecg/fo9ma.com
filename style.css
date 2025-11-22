@@ -21,14 +21,19 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 25px;
   margin-bottom: 10px;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 0px 20px rgb(91, 0, 175),0px 0px 40px rgb(66, 0, 97);
+  
 }
 
 .links-list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  font-size: 18px;
+
 }
 
 .links-list a {
@@ -42,14 +47,14 @@ body {
 }
 
 .fo9ma-logo-container {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  border: 3px solid var(--font-color);
+  border: 2px solid var(--font-color);
 }
 
 .fo9ma-logo-container:hover {
-  scale: 1.1;
+  scale: 1.2;
 }
 
 .search-bar {
@@ -58,10 +63,12 @@ body {
   outline: none;
   background: none;
   text-align: center;
+    padding: 3px 6px;
+
 }
 
 .search-bar:focus {
-  padding: 2px 5px;
+  padding: 5px 10px;
 }
 
 .articles-container {
@@ -108,4 +115,11 @@ body {
   font-size: 20px;
   color: var(--font-color);
   font-weight: bold;
+}
+h1{
+  color: royalblue;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0px 0px 20px rgb(0, 149, 175),0px 0px 40px rgb(25, 0, 165);
+  margin: 60px;
 }
