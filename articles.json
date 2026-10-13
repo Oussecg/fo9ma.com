@@ -1,17 +1,25 @@
 [
   {
     "image": "./assets/images/FO9MA.webp",
-    "name": "Oussema",
-    "price": "15"
+    "name": "Melek",
+    "price": "300"
   },
+
+  {
+    "image": "./assets/images/FO9MA.webp",
+    "name": "Fo9ma",
+    "price": "1000"
+  },
+
   {
     "image": "./assets/images/FO9MA.webp",
     "name": "Oussema",
     "price": "15"
   },
+
   {
     "image": "./assets/images/FO9MA.webp",
-    "name": "Oussema",
+    "name": "Youssef",
     "price": "15"
   }
 ]

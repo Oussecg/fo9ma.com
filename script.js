@@ -65,7 +65,6 @@ class Operators {
 const operators = new Operators();
 operators.changeVariables();
 operators.readArticles();
-operators.renderArticles();
 
 
 
